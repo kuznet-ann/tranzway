@@ -1,0 +1,49 @@
+.about {
+    padding-top: 240px;
+    &__text {
+        max-width: 700px;
+        width: 100%;
+    }
+    &__title {
+        @include red_line;
+    }
+    &__title-transportation {
+        width: 540px;
+    }
+    &__descr {
+        margin-top: 10px;
+    }
+    &__transportation {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        padding-top: 170px;
+        &__title-transportation {
+            width: 424px;
+        }
+        &__img-transportation {
+            width: 288px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        padding-top: 140px;
+        &__transportation {
+            flex-direction: column;
+        }
+        &__title-transportation {
+            width: 276px;
+        }
+        &__img, &__img-transportation {
+            width: 280px;
+        }
+    }
+}

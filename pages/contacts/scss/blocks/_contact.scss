@@ -1,0 +1,15 @@
+.contact {
+    padding-top: 180px;
+    &__descr {
+      margin-top: 10px;  
+    }
+    &__link {
+        display: block;
+        margin-top: 10px;
+        color: $primaryColor;
+        &:hover {
+            color: $primaryColorHover;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.countries {
+    padding-top: 120px;
+    &__wrapper {
+        width: 404px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__btn {
+        cursor: pointer;
+        transition: all .05s;
+        &.active {
+            @include red-line;
+        }
+        &:hover {
+            @include red-line;
+        }
+    }
+
+    &__list {
+        margin-top: 20px;
+    }
+    &__item {
+        display: none;
+        gap: 40px;
+        &.active {
+            display: flex;
+        }
+    }
+    &__info {
+        width: 578px;
+    }
+    &__descr {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .countries {
+        &__item {
+            flex-direction: column;
+        }
+        &__info {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 451px) {
+    .countries {
+        &__wrapper {
+            width: auto;
+        }
+    }
+}

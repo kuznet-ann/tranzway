@@ -1,0 +1,129 @@
+.menu {
+    padding: 27px 0;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:last-child {
+            width: 95px;
+        }
+    }
+    &__navigation {
+        width: 636px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        color: $baseFontColor;
+        transition: all .05s;
+        &.white {
+            color: $whiteFontColor;
+        }
+        &:hover {
+            @include red-line;
+        }
+        &.active {
+            @include red-line;
+            cursor: default;
+        }
+    }
+    &__hamburger {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        display: none;
+    }
+    &__line {
+        display: block;
+        width: 40px;
+        height: 2px;
+        border-radius: 5px;
+        background-color: $baseFontColor;
+        &.white {
+            background-color: $whiteFontColor;
+        }
+    }
+
+    &__overlay {
+        display: none;
+        transition: all .3s;
+        padding-top: 100px;
+        padding-left: 80px;
+        box-sizing: border-box;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(24, 28, 38);
+        border-left: solid 1px $secondaryColor;
+    }
+    &__navigation-overlay {
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+    }
+    &__close {
+        top: 37px;
+        right: 20px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        &__item {
+            &:last-child {
+                width: 165px;
+            }
+        }
+        &__navigation {
+            display: none;
+        }
+        &__hamburger {
+            display: flex;
+        }
+        &__navigation-overlay {
+            display: flex;
+        }
+        &__overlay {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        &__overlay {
+            width: 100%;
+            right: -100%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .menu {
+        &__item {
+            &:last-child {
+                width: 95px;
+            }
+        }
+        &__phone {
+            display: none;
+        }
+    }
+}

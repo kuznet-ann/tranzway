@@ -1,0 +1,133 @@
+// Multiclasses
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.container-fluid {
+    max-width: 1900px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn {
+    position: relative;
+    width: 296px;
+    height: 62px;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 5px;
+    color: $whiteFontColor;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background-color: $primaryColorHover;
+    }
+    &:active {
+        background-color: $primaryColorPress;
+    }
+}
+
+.btn-a {
+    position: relative;
+    width: 296px;
+    height: 62px;
+    box-sizing:border-box;
+    padding: 20px 60px;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 5px;
+    color: $whiteFontColor;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: all .3s;
+    &:hover {
+        background-color: $primaryColorHover;
+    }
+    &:active {
+        background-color: $primaryColorPress;
+    }
+}
+
+.fz-h1 {
+    font-size: 90px;
+    line-height: 150px;
+    font-weight: 400;
+    font-family: 'Rubik Mono One', monospace;
+}
+
+.fz-h2 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Rubik Mono One', monospace;
+    letter-spacing: 2.5px;
+}
+
+.fz-h3 {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.fz-h4 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.fz-h5 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@media (max-width: 1440px) {
+    .container, .container-fluid {
+        width: auto;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .fz-h1 {
+        font-size: 80px;
+        line-height: 120px;
+    }
+    .fz-h2 {
+        font-size: 50px;
+        letter-spacing: -1%;
+    }
+    .fz-h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    * {
+        font-size: 14px;
+    }
+    .btn {
+        width: 200px;
+    }
+    .fz-h1 {
+        font-size: 30px;
+        line-height: 64px;
+    }
+    .fz-h2 {
+        font-size: 27px;
+        letter-spacing: 0;
+    }
+    .fz-h3 {
+        font-size: 20px;
+    }
+    .fz-h4 {
+        font-size: 16px;
+    }
+}

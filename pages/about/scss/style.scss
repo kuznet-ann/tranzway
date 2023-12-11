@@ -1,0 +1,16 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Rubik+Mono+One&display=swap');
+
+// Import base styles
+@import "../../../scss/base/variables";
+@import "../../../scss/base/mixins";
+@import "../../../scss/base/reset";
+@import "../../../scss/base/multiclass";
+
+// Import blocks
+@import "../../../scss/base/menu";
+@import "blocks/about";
+@import "blocks/dignities";
+@import "../../../scss/blocks/sponsors";
+@import "../../../scss/blocks/request";
+@import "../../../scss/base/footer";

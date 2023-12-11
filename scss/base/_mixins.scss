@@ -1,0 +1,4 @@
+@mixin red-line {
+    border-bottom: $primaryColor 2px solid;
+    margin-bottom: -2px;
+}

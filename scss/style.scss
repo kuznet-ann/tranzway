@@ -1,0 +1,19 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Rubik+Mono+One&display=swap');
+
+// Import base styles
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+@import "base/multiclass";
+@import "base/animations";
+
+// Import blocks
+@import "base/menu";
+@import "blocks/promo";
+@import "blocks/why_us";
+@import "blocks/achievements";
+@import "blocks/request";
+@import "blocks/sponsors";
+@import "blocks/map";
+@import "base/footer";
