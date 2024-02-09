@@ -1,0 +1,21 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Rubik+Mono+One&display=swap');
+
+// Import base styles
+@import "../../../scss/base/variables";
+@import "../../../scss/base/mixins";
+@import "../../../scss/base/reset";
+@import "../../../scss/base/multiclass";
+
+// Import blocks
+@import "../../../scss/base/menu";
+@import "blocks/enter";
+@import "../../../scss/base/footer";
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}

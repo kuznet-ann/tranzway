@@ -4,7 +4,7 @@
     <div class="container">
         <ul class="menu__list">
             <li class="menu__item">
-                <a href="/index.php" class="menu__link-logo">
+                <a href="/" class="menu__link-logo">
                     <?php 
                         if ($colorClass == "white") {
                             echo '<img src="/img/logo.png" alt="Логотип компании" class="menu__logo">';
@@ -16,7 +16,7 @@
             </li>
             <li class="menu__item">
                 <nav class="menu__navigation">
-                    <a href="/index.php" class="menu__link fz-h4 <?=$colorClass?>">Главная</a>
+                    <a href="/" class="menu__link fz-h4 <?=$colorClass?>">Главная</a>
                     <a href="/pages/about/" class="menu__link fz-h4 <?=$colorClass?>">О нас</a>
                     <a href="/pages/services/" class="menu__link fz-h4 <?=$colorClass?>">Наши услуги</a>
                     <a href="/pages/form/" class="menu__link fz-h4 <?=$colorClass?>">Оформить заявку</a>
@@ -33,7 +33,19 @@
                         }
                     ?>    
                 </a>
-                <button class="menu__btn"><img src="/icon/general/ru.png" alt="Иконка флага России" class="menu__language"></button>
+                <?php if(!empty($_SESSION['login'])) {
+                    echo '<a class="menu__btn" href="/pages/account/">';
+                } else {
+                    echo '<a class="menu__btn" href="/pages/login/">';
+                } ?>
+                    <?php 
+                            if ($colorClass == "white") {
+                                echo '<img src="/icon/general/Аккацнт.png" alt="Иконка флага России" class="menu__language">';
+                            } else {
+                                echo '<img src="/icon/general/Аккацнт-black.png" alt="Иконка флага России" class="menu__language">';
+                            }
+                        ?>  
+                </a>
                 <button class="menu__hamburger">
                     <span class="menu__line <?=$colorClass?>"></span>
                     <span class="menu__line <?=$colorClass?>"></span>

@@ -1,0 +1,37 @@
+.user {
+    padding-top: 148px;
+    &__btn {
+        margin-top: 40px;
+    }
+    &__data {
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 840px;
+        border-collapse: collapse;
+        align-items: center;
+    }
+    &__data thead {
+        background-color: #f1f1fd;
+    }
+    &__data td {
+        padding: 10px;
+        border: 1px solid $secondaryColor;
+    }
+    &__id {
+        width: 30px;
+    }
+    &__data td input {
+        color: $baseFontColor;
+    }
+    &__icon {
+        width: 30px;
+        height: 30px;
+        border: none;
+    }
+    &__icon-del {
+        background: url('/icon/general/close.png') center center/cover no-repeat;
+    }
+    &__icon-change {
+        background: url('/icon/general/change.png') center center/cover no-repeat;
+    }
+}

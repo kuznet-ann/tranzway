@@ -1,4 +1,6 @@
-<?php include "config/main.php" ?>
+<?php include "config/main.php";
+    session_start();
+    ?>
 
 <!DOCTYPE html>
 <html lang="ru">
