@@ -23,6 +23,9 @@
     &__data td input {
         color: $baseFontColor;
     }
+    &__input-hide {
+        display: none;
+    }
     &__icon {
         width: 30px;
         height: 30px;

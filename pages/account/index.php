@@ -76,7 +76,10 @@
                 ?>
                     <tr>
                         <form method="post">
-                            <td><input class="user__input" name="id" type="text" value="<?=$row['id']?>"></td>
+                            <td>
+                                <input class="user__input" disabled name="id" type="text" value="<?=$row['id']?>">
+                                <input class="user__input user__input-hide" name="id" type="text" value="<?=$row['id']?>">
+                            </td>
                             <td><input class="user__input" name="login" type="email" value="<?=$row['email']?>"></td>
                             <td><input class="user__input" name="role" type="text" value="<?=$row['role']?>"></td>
                             <td>

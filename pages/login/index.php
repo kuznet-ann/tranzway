@@ -12,7 +12,7 @@
         
         $getEmail = mysqli_query($connection, "select * from users where email='$login'");
         if($getEmail->num_rows > 0) {
-            $errorMessageReg = 'Почта уже зарегестирована';
+            $errorMessageReg = 'Почта уже зарегистирована';
         } else {
             if($pass == $repass) {
                 $addUser = mysqli_query($connection, "INSERT INTO `users`(`email`, `password`, `role`) VALUES ('$login','$pass', '0')");
@@ -73,7 +73,7 @@
     <section class="enter">
         <div class="container">
             <div class="enter__wrapper">
-                <button class="enter__title fz-h3 active">Регестрация</button>
+                <button class="enter__title fz-h3 active">Регистрация</button>
                 <button class="enter__title fz-h3">Авторизация</button>
             </div>
 
@@ -83,7 +83,7 @@
                 <input type="password" class="enter__input" name="repass" placeholder="Подтвердите пароль" required>
                 <?=$errorMessageReg?>
 
-                <input type="submit" value="Зарегестрироваться" class="enter__btn btn" name="reg">
+                <input type="submit" value="Зарегистрироваться" class="enter__btn btn" name="reg">
             </form>
             <form class="enter__form" method="post">
                 <input type="email" class="enter__input" name="login" placeholder="Введите почту" required>
